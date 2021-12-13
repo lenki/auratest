@@ -11,6 +11,7 @@ text_search = "headphones"
 
 options = webdriver.ChromeOptions()
 options.add_argument('--no-sandbox')
+options.add_argument('headless')
 options.add_argument('disable-infobars')
 options.add_argument('window-size=1920x1080')
 options.add_argument('--verbose')
@@ -100,6 +101,7 @@ def bestbuy_scraping(link):
             baseKey = base
             priceKey = float(divPrice.find("span").text.replace('$', ''))
 
+    driver.quit()
     return priceKey
 
 
