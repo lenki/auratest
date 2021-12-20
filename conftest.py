@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 def test_shopping():
 
     global driver
-    options = webdriver.ChromeOptions()
+    options = webdriver.ChromeOptions() #git test branch
     options.add_argument('--no-sandbox')
     options.add_argument('disable-infobars')
     options.add_argument('window-size=1920x1080')
@@ -20,7 +20,7 @@ def test_shopping():
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
 
-    PATH = '/Users/elena/PycharmProjects/tip/chromedriver'
+    PATH = '/Users/elena/Desktop/test/auratest/utulities/chromedriver'
     driver = webdriver.Chrome(options=options, executable_path=PATH)
     driver.implicitly_wait(5)
 
