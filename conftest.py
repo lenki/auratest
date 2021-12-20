@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 
 
 
-def test_shopping():
+def test_bug():
 
     global driver
     options = webdriver.ChromeOptions() #git test branch
